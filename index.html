@@ -264,13 +264,6 @@
     font-size: clamp(1.8rem, 3.5vw, 2.5rem);
     letter-spacing: -0.01em;
   }
-  .section-head .section-num {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.8rem;
-    color: var(--ink-faint);
-    letter-spacing: 0.1em;
-  }
-
   /* ---------- About ---------- */
   .about-grid {
     display: grid;
@@ -553,7 +546,6 @@
       <a href="#projects">Projects</a>
       <a href="#cv">CV</a>
       <a href="#contact">Contact</a>
-      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☾</button>
     </div>
   </div>
 </nav>
@@ -575,8 +567,7 @@
     </div>
     <div class="hero-image">
       <div class="frame">
-        <!-- Replace with your photo: assets/portrait.jpg -->
-        <img src="https://images.unsplash.com/photo-1614642264762-d0a3b8bf3700?w=600" alt="Harim Jin">
+        <img src="assets/portrait.jpg" alt="Harim Jin">
       </div>
     </div>
   </section>
@@ -585,27 +576,26 @@
   <section class="section" id="about">
     <div class="section-head">
       <h2>About me</h2>
-      <span class="section-num">01 / 06</span>
     </div>
     <div class="about-grid reveal">
       <div>
         <p>
           Hello! I am <strong>Harim Jin</strong>, a postdoc at the
-          <strong>[Max Planck Institute for Astrophysics]</strong> in Garching, Germany, working with
-          [Prof. X] and [Prof. Y].
+          <strong>Max Planck Institute for Astrophysics</strong> in Garching, Germany, working with
+          Prof. Selma E. de Mink.
         </p>
         <p>
-          My research focuses on [brief description of your research — 1-2 sentences]. I use
-          [tools/methods: e.g., 3D MHD simulations with AREPO, machine learning, MESA stellar evolution code].
+          My research focuses on the lives and deaths of massive stars. I use
+          MESA stellar evolution code and STELLA supernova simulation code.
         </p>
       </div>
       <div>
         <p>
-          Before starting my PhD, I completed my [Master's / Bachelor's] at
-          <strong>[University Name]</strong>, where I worked on [brief thesis topic].
+          Before starting my postodc, I completed my PhD at
+          <strong>University of Bonn</strong>, where I worked on massive binary evolution.
         </p>
         <p>
-          Outside of research, I enjoy [hobbies — e.g., hiking in the Alps, photography, classical music].
+          Outside of research, I enjoy playing the piano.
           Feel free to reach out — I'm always happy to chat about science or share a coffee.
         </p>
       </div>
@@ -616,7 +606,6 @@
   <section class="section" id="research">
     <div class="section-head">
       <h2>Research interests</h2>
-      <span class="section-num">02 / 06</span>
     </div>
     <div class="interests-grid reveal">
       <div class="interest-card">
@@ -626,18 +615,13 @@
       </div>
       <div class="interest-card">
         <span class="icon">◐</span>
-        <h3>Compact objects</h3>
-        <p>White dwarfs, neutron stars, and the remnants of stellar collapse.</p>
+        <h3>Supernovae</h3>
+        <p>How we can use core collapse supernovae to understand massive star physics.</p>
       </div>
       <div class="interest-card">
         <span class="icon">≋</span>
-        <h3>Magnetohydrodynamics</h3>
-        <p>3D simulations of magnetic fields in plasmas across astrophysical scales.</p>
-      </div>
-      <div class="interest-card">
-        <span class="icon">◯</span>
-        <h3>Transients</h3>
-        <p>Supernovae, mergers, and the bright flashes that mark cosmic violence.</p>
+        <h3>Data publication</h3>
+        <p>Optimizing the publication and sharing of astrophysical data.</p>
       </div>
     </div>
   </section>
@@ -646,57 +630,69 @@
   <section class="section" id="projects">
     <div class="section-head">
       <h2>Selected projects</h2>
-      <span class="section-num">03 / 06</span>
     </div>
     <div class="projects">
 
       <article class="project reveal">
         <div class="project-img">
-          <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=800" alt="Project 1">
+          <img src="assets/fig_BOMBI.png" alt="Project 0">
         </div>
         <div>
-          <div class="project-meta">2025 · Ongoing</div>
-          <h3>[Project Title — e.g., 3D MHD simulations of white dwarf mergers]</h3>
+          <div class="project-meta">2026 · Ongoing</div>
+          <h3>Bonn MPA Binary Interface</h3>
           <p>
-            [1-2 sentence description of what you did, what you found, and why it matters.
-            Keep it accessible — imagine explaining to a colleague from another field.]
+            We are developing a new interface for the Bonn-MPA binary evolution models to improve its usability and accessibility.
           </p>
           <div class="project-links">
-            <a href="#">Read paper ↗</a>
-            <a href="#">View code ↗</a>
+            <a href="https://bonnmpainterface.com/">Web page ↗</a>
           </div>
         </div>
       </article>
 
       <article class="project reveal">
         <div class="project-img">
-          <img src="https://images.unsplash.com/photo-1543722530-d2c3201371e7?w=800" alt="Project 2">
+          <img src="assets/fig_IbIc.png" alt="Project 1">
         </div>
         <div>
-          <div class="project-meta">2024</div>
-          <h3>[Project Title — Master's Thesis]</h3>
+          <div class="project-meta">2025-2026 · Ongoing</div>
+          <h3>Type Ib and Ic supernovae</h3>
           <p>
-            [Description of your Master's thesis work or another past project. Mention key results
-            or methods used.]
+            We found that Type Ib and Ic supernovae differ in optical colors when they are optically brightest, which stems from progenitor chemical structures.
           </p>
           <div class="project-links">
-            <a href="#">Download thesis ↗</a>
+            <a href="https://ui.adsabs.harvard.edu/abs/2026arXiv260501200J/abstract">Read paper ↗</a>
           </div>
         </div>
       </article>
 
       <article class="project reveal">
         <div class="project-img">
-          <img src="https://images.unsplash.com/photo-1539321908154-04927596764d?w=800" alt="Project 3">
+          <img src="assets/fig_grid.png" alt="Project 2">
         </div>
         <div>
-          <div class="project-meta">2023</div>
-          <h3>[Earlier Project Title]</h3>
+          <div class="project-meta">2021-2026</div>
+          <h3>Binary star evolution model grid</h3>
           <p>
-            [Description of an earlier project, internship, or Bachelor's thesis.]
+            A comprehensive grid of binary star evolution models, covering a wide range of initial binary parameters, to be used for various applications in stellar astrophysics.
           </p>
           <div class="project-links">
-            <a href="#">Read more ↗</a>
+            <a href="https://ui.adsabs.harvard.edu/abs/2026A%26A...707A..56J/abstract">Read paper ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project reveal">
+        <div class="project-img">
+          <img src="assets/fig_boron.png" alt="Project 3">
+        </div>
+        <div>
+          <div class="project-meta">2021-2024</div>
+          <h3>Boron as a tracer of potential stellar mergers</h3>
+          <p>
+            Boron is a sensitive tracer of internal mixing processes and binary interactions in stars. We investigated how boron can be used to identify potential merger products among massive stars.
+          </p>
+          <div class="project-links">
+            <a href="https://ui.adsabs.harvard.edu/abs/2024A%26A...690A.135J/abstract">Read paper ↗</a>
           </div>
         </div>
       </article>
@@ -708,29 +704,34 @@
   <section class="section" id="cv">
     <div class="section-head">
       <h2>Curriculum vitae</h2>
-      <span class="section-num">04 / 06</span>
     </div>
     <div class="timeline reveal">
 
       <div class="timeline-item">
-        <div class="date">OCT 2025 — PRESENT</div>
-        <h3>PhD Student in Astrophysics</h3>
+        <div class="date">NOV 2025 — PRESENT</div>
+        <h3>Postdoctoral Researcher</h3>
         <div class="institution">Max Planck Institute for Astrophysics, Garching</div>
-        <div class="detail">Topic: [your research topic]</div>
+        <div class="detail">Topic: Massive star evolution</div>
       </div>
 
       <div class="timeline-item">
-        <div class="date">OCT 2023 — JUL 2025</div>
+        <div class="date">OCT 2021 — DEC 2025</div>
+        <h3>Ph.D. in Astrophysics</h3>
+        <div class="institution">University of Bonn, Germany</div>
+        <div class="detail">Thesis: Chemical fingerprints of stellar evolution in Galactic massive stars</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="date">MAR 2019 — DEC 2021</div>
         <h3>M.Sc. in Astrophysics</h3>
-        <div class="institution">[University Name, City]</div>
-        <div class="detail">Thesis: [thesis title]</div>
+        <div class="institution">Seoul National University, South Korea</div>
+        <div class="detail">Thesis: Light Curve and Color Properties of Type Ib/Ic Supernovae</div>
       </div>
 
       <div class="timeline-item">
-        <div class="date">SEP 2020 — SEP 2023</div>
+        <div class="date">MAR 2014 — FEB 2019</div>
         <h3>B.Sc. in Physics</h3>
-        <div class="institution">[University Name, City]</div>
-        <div class="detail">Thesis: [thesis title]</div>
+        <div class="institution">Korea Advanced Institute of Science and Technology, South Korea</div>
       </div>
 
     </div>
@@ -743,21 +744,13 @@
   <section class="section" id="beyond">
     <div class="section-head">
       <h2>Beyond research</h2>
-      <span class="section-num">05 / 06</span>
     </div>
     <p style="color: var(--ink-soft); max-width: 40rem; margin-bottom: 2rem;">
-      A few snapshots from outside the office — mostly mountains, occasionally cities, always with a camera in hand.
+      A few snapshots in and out of the workplace.
     </p>
     <div class="photo-grid reveal">
       <!-- Replace these URLs with your own photos in assets/photos/ -->
       <div class="photo"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=500" alt=""></div>
-      <div class="photo"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500" alt=""></div>
-      <div class="photo"><img src="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?w=500" alt=""></div>
-      <div class="photo"><img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=500" alt=""></div>
-      <div class="photo"><img src="https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?w=500" alt=""></div>
-      <div class="photo"><img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=500" alt=""></div>
-      <div class="photo"><img src="https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?w=500" alt=""></div>
-      <div class="photo"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=500" alt=""></div>
     </div>
   </section>
 
@@ -765,7 +758,6 @@
   <section class="section" id="contact">
     <div class="section-head">
       <h2>Get in touch</h2>
-      <span class="section-num">06 / 06</span>
     </div>
     <div class="contact-box reveal">
       <p style="color: var(--ink-soft); margin-bottom: 1rem;">
